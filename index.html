@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xmas tree</title>
+    
+    <style type="text/css">
+        body{
+            background-color: #ffff;
+        }
+        main{
+            margin: 0 auto;
+            width: 100%; 
+        }
+        .branch1{
+            width: 0;
+            height: 0;
+            border-left: 90px solid transparent;
+            border-right: 90px solid transparent;
+            border-bottom: 130px solid green;
+            margin: auto;
+            position: relative;
+             z-index: 3;
+        }
+        .branch2{
+            width: 0;
+            height: 20px;
+            border-left: 140px solid transparent;
+            border-right: 140px solid transparent;
+            border-bottom: 180px solid green;
+            margin: auto;  
+            margin-top: -95px;
+           position: relative;
+             z-index: 2;
+        }
+         .branch3{
+            width: 0;
+            height: 0;
+            border-left: 180px solid transparent;
+            border-right: 180px solid transparent;
+            border-bottom: 220px solid green;
+            margin: auto;  
+            margin-top: -110px;
+            z-index: 1;
+            position: relative;
+        }
+         .trunk{
+            width: 50px;
+            height: 100px;
+            margin: auto;
+            margin-top: -40px;
+            position: relative;
+            background-color: saddlebrown;
+            z-index: 0;
+        }
+        .ball1{
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            animation: xmas 2s ease alternate infinite;
+        }
+        @keyframes xmas {
+          10% {background-color: red;}
+          20% {background-color: orange;}
+          30% {background-color: yellow;}
+          40% {background-color: darkseagreen;}
+          50% {background-color: indigo;}
+          60% {background-color: violet;}
+        }
+        .ball2{
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            animation: xmas2 2s ease alternate infinite;
+        }
+        @keyframes xmas2 {
+          10% {background-color: violet;}
+          20% {background-color: indigo;}
+          30% {background-color: darkseagreen;}
+          40% {background-color: yellow;}
+          50% {background-color: orange;}
+          60% {background-color: red;}
+        } 
+        .ball3{
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            animation: xmas3 2s ease alternate infinite;
+        }
+        @keyframes xmas3 {
+          10% {background-color: indigo;}
+          20% {background-color: yellow;}
+          30% {background-color: red;}
+          40% {background-color: darkseagreen;}
+          50% {background-color: orange;}
+          60% {background-color: violet;}
+        }          
+    </style>
+</head>
+<body>
+    <main>
+        <div class="branch1">
+            <div class="ball1" style="top: 100px;right:30px;"></div>
+            <div class="ball2" style="top: 90px;right:-40px;"></div>
+            <div class="ball3" style="top: 50px;right:-10px;"></div>
+        </div>
+        <div class="branch2">
+            <div class="ball1" style="top: 130px;right:60px;"></div>
+            <div class="ball2" style="top: 170px;right:5px;"></div>
+            <div class="ball3" style="top: 120px;right:-10px;"></div>
+            <div class="ball1" style="top: 130px;right:-70px;"></div>
+        </div>
+        <div class="branch3">
+             <div class="ball2" style="top: 180px;right:100px;"></div>
+            <div class="ball1" style="top: 140px;right:55px;"></div>
+            <div class="ball3" style="top: 190px;right:-10px;"></div>
+            <div class="ball3" style="top: 120px;right:-90px;"></div>
+            <div class="ball2" style="top: 140px;right:-30px;"></div>
+            <div class="ball1" style="top: 190px;right:-110px;"></div>
+        </div>
+        <div class="trunk"></div>   
+            
+    </main>
+</body>
+</html>
